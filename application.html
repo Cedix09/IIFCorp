@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>IIF</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<meta charset="utf-8">
+</head>
+<body> 
+<header class="t">
+  <div class="left-content">
+    <img src="images/logo1.png" width="80px" height="75px" class="logo">
+    <p class="iif"><b>IIF CORP</b></p>
+    </div>
+  <nav class="nav-links">
+   
+    <a class="a" href="index.html" id="index">Головна сторінка</a>
+    <a class="a" href="products.php" id="products">Товари</a>
+    <a class="a" href="main.html" id="main">Головний офіс</a>
+    <a class="a" href="own.html" id="own">Про засновника Корпорації</a>
+    <a class="a" href="academy.html" style="margin-right: 20px;">IIF ACADEMY</a>
+  </nav>
+</header>
+<section class="red-section">
+</section>
+<section class="black-section">
+<div class="fed2">
+  <div class="form-container">
+    <h2>Форма на вступ у IIF ACADEMY</h2>
+    <form action="process.php" method="POST">
+      <label for="name">Ім'я та Прізвище:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Ваш Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Номер телефону:</label>
+      <input type="tel" id="phone_number" name="phone_number" required>
+
+      <label for="contry">Країна проживання:</label>
+      <select id="contry" name="contry" required>
+        <option value="UA">Україна</option>
+       <option value="RU">Росія</option>
+       <option value="KZ">Казахстан</option>
+      </select>
+
+      <label for="city">Місто проживання:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="postal_code">Поштовий індекс:</label>
+      <input type="text" id="postal_code" name="postal_code" required>
+
+      <label for="program">Оберіть програму навчання:</label>
+      <select id="program" id="program" name="program" required>
+        <option value="IT and AI">Програмування та штучний інтелект</option>
+        <option value="Biotech">Біотехнології</option>
+        <option value="Mechanic">Авто-Механік</option>
+        <option value="Nano tech">Нано-Технології</option>
+        <option value="Juridical">Юридичний</option>
+      </select>
+
+      <input type="submit" value="Надіслати заявку">
+    </form>
+  </div>
+  </div>
+  <footer>
+    <p class="last">Ⓒ IIF CORP</p>
+    </footer>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>IIF</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<meta charset="utf-8">
+</head>
+<body> 
+<header class="t">
+  <img src="images/logo1.png" width="80px" height="75px" class="logo">
+  <div class="left-content">
+  <p class="iif"><b>IIF CORP</b></p>
+  </div>
+  <nav class="nav-links">
+    <div class="language-dropdown">
+      <button class="language-button" onclick="toggleDropdown()" id="lang">Мова</button>
+      <div class="dropdown-content" id="dropdown">
+        <a href="application2.html" onclick="changeLanguage('ua')">Українська</a>
+        <a href="application2eng.html" onclick="changeLanguage('ru')">English</a>
+        <a href="application2ru.html" onclick="changeLanguage('ru')">Русский</a>
+      </div>
+    <a class="active" href="index.html" id="index">Головна сторінка</a>
+    <a class="a" href="products.html" id="products">Товари</a>
+    <a class="a" href="main.html" id="main">Головний офіс</a>
+    <a class="a" href="own.html" id="own">Про засновника Корпорації</a>
+    <a class="a" href="academy.html" style="margin-right: 20px;">IIF ACADEMY</a>
+  </nav>
+</header>
+<section class="red-section">
+</section>
+<section class="black-section">
+<div class="fed2">
+  <div class="form-container">
+    <h2>Ваша заявка відправлена, відповідь прийде на Ваш E-mail</h2>
+    <form action="/submit_application" method="POST">
+      <button><a href="index.html">Назад на голову сторінку</a></button>
+    </form>
+  </div>
+  </div>
+  <footer>
+    <p class="last">Ⓒ IIF CORP</p>
+    </footer>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>
+

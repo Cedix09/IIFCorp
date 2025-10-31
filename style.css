@@ -1,0 +1,592 @@
+html, body { 
+	background: #000000;
+	color: #bfbfbf;
+	font-family: Impact;
+	font-size: 45px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+.red {
+	color: #cc4331;
+	font-size: 55px;
+}
+
+.t {
+	background: #960808;
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	justify-content: space-between;
+	display: flex;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.t.scrolled {
+	background: #1c1c1c;
+}
+.iif {
+	color: #bfbfbf;
+	font-size: 20pt;
+	font-family: Impact;
+}
+.iif2 {
+	color: #bfbfbf;
+	font-size: 25pt;
+	margin-left: 20px;
+	align-self: right;
+}
+footer {
+	background: #000000;
+	position: flex;
+    bottom: 0;
+    width: 100%;
+	height: 50px;
+	margin-top: 150px;
+}
+.fed {
+	width: 75%;
+	margin: 0 auto;
+}
+.fed2 {
+	width: 50%;
+	margin: 0 auto;
+}
+.left-content {
+    display: flex;
+    align-items: center;
+}
+.content {
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	padding: 50px;
+	max-width: 1500px;
+	margin: 0 auto;
+	color: #bfbfbf;
+}
+.image-container {
+	flex: 1;
+	padding-right: 20px;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+}
+.image-container img {
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 350;
+}
+.text-conainer {
+	flex: 1;
+	max-width: 600px;
+	text-align: center;
+}
+.image-container2 img {
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 20;
+}
+.text-conainer2 {
+	flex: 1;
+	max-width: 600px;
+	text-align: center;
+}
+.col {
+	font-weight: normal;
+}
+.text-conainer p {
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin-top: 10px 0;
+}
+.content img {
+    margin-right: 20px; /* Добавляем отступ справа от картинки */
+}
+.red-section {
+	background: linear-gradient(180deg, #960808, #D4620B); /* #960808; */
+	height: 200px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	padding-top: 90px;
+	text-align: center;
+}
+.black-section {
+	background-color: #000000;
+	color: #bfbfbf;
+
+	padding-top: 200px;
+}
+.moving-text {
+	position: relative;
+	font-size: 55px;
+	color: #bfbfbf;
+	text-align: center;
+	width: 100%;
+	top: 30px;
+	z-index: 10;
+}
+.moving-text30 {
+	position: relative;
+	font-size: 55px;
+	color: #bfbfbf;
+	text-align: center;
+	width: 100%;
+	top: 30px;
+	margin-left: 32%;
+}
+.moving-text2 {
+	position: relative;
+	font-size: 25px;
+	color: #bfbfbf;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+	top: 65px;
+
+}
+.moving-text21 {
+	position: relative;
+	font-size: 55px;
+	color: #bfbfbf;
+	text-align: right;
+	width: 100%;
+	top: 30px;
+	z-index: 10;
+	margin-right: 2%;
+}
+.moving-text div {
+	margin: 0;
+}
+.logo {
+	margin-left: 30px;
+}
+.text1 {
+	text-indent: 20px;
+}
+.text2 {
+	text-indent: 75px;
+}
+.text3 {
+	font-size: 30px;
+	}
+.text4 {
+	font-size: 20px;
+}
+.text5 {
+	font-size: 35px;
+}
+.red2 {
+	color: #cc4331;
+	font-size: 45px;
+}
+.red3 {
+	color: #cc4331;
+	font-size: 30px;
+}
+.imp {
+	text-align: center;
+}
+.name {
+	margin-top: 150px;
+}
+a {
+	color: #bfbfbf;
+	text-decoration: none;
+	font-size: 20px;
+}
+.last {
+	font-size: 20px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+.language-dropdown {
+    position: relative; 
+}
+
+.language-button {
+    background-color: black; 
+    color: #bfbfbf; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-weight: normal; 
+    border-radius: 5px; 
+}
+.buybut {
+    background-color: #cc4331; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-weight: normal; 
+    border-radius: 5px; 
+}
+.b {
+	color: white;
+	text-decoration: none;
+}
+.language-button:hover {
+    background-color: #a12d28; /* Цвет при наведении */
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: black; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+	border-radius: 10px;
+	transition: opacity 0.3s ease;
+}
+.dropdown-content.show {
+    display: block; 
+    opacity: 1; 
+}
+.dropdown-content a {
+    color: #bfbfbf;
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+}
+
+.dropdown-content a:hover {
+    background-color: black; 
+}
+.nav-links a:hover {
+    text-decoration: none;
+	color: #edb6b6;  
+}
+.nav-links {
+    display: flex; 
+    align-items: center;
+	white-space: nowrap;
+}
+.nav-links a {
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 20px;
+}
+.links-container {
+	display: flex;
+	gap: 15px;
+	}
+.a {
+	font-size: 25pt;
+	color: #bfbfbf;
+	font-weight: 50;
+}
+.active {
+	color: #d4d2d2;
+	font-size: 25pt;
+	font-weight: normal;
+}
+.photo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.photo-item {
+	text-align: center;
+	max-width: 350px;
+	margin-left: 50px;
+}
+.photo-item img {
+	width: 100%;
+	border-radius: 10px;
+}
+.acaimg {
+	width: 90%;
+}
+.form-container {
+	width: 100%;
+	background-color: #1c1c1c;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.form-container h2 {
+	color: #cc4331;
+	font-size: 45px;
+}
+form label {
+	display: block;
+	margin-top: 15px;
+	font-size: 35px;
+}
+form input, form select, form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	font-size: 19px;
+}
+form button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #cc4331;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	cursor: pointer;
+}
+form.button:hover {
+	background-color: #a12d28;
+}
+.modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+        }
+
+        .modal-content {
+            background-color: #000000;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+
+        .modal-form input[type="text"],
+        .modal-form input[type="password"],
+        .modal-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .modal-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .modal-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+		.regg {
+			background: linear-gradient(45deg, #470011, #FF2400); /* background: linear-gradient(90deg, #4CAF50, #2E8B57); Градиент фона */ 
+			color: white; /* Цвет текста */
+			border: none; /* Убираем границу */
+			padding: 10px 20px; /* Внутренние отступы */
+			font-size: 16px; /* Размер текста */
+			font-weight: bold; /* Жирный текст */
+			border-radius: 8px; /* Закруглённые края */
+			cursor: pointer; /* Указываем курсор */
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
+			transition: all 0.3s ease; /* Плавный переход эффектов */
+		}
+		
+		/* Эффект при наведении */
+		.regg:hover {
+			background: linear-gradient(90deg, #FF2400, #470011); /* Обратный градиент */
+			transform: scale(1.05); /* Лёгкое увеличение */
+			box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Усиленная тень */
+		}
+		
+		/* Эффект при нажатии */
+		.regg:active {
+			transform: scale(0.95); /* Уменьшение кнопки */
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшенная тень */
+		}
+		.regg2 {
+			background: linear-gradient(90deg, #fc1717, #d10808); /* Градиент фона */
+			color: white; /* Цвет текста */
+			border: none; /* Убираем границу */
+			padding: 10px 20px; /* Внутренние отступы */
+			font-size: 16px; /* Размер текста */
+			font-weight: normal; /* Жирный текст */
+			border-radius: 8px; /* Закруглённые края */
+			cursor: pointer; /* Указываем курсор */
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
+			transition: all 0.3s ease; /* Плавный переход эффектов */
+		}
+		
+		/* Эффект при наведении */
+		.regg2:hover {
+			background: linear-gradient(90deg, #d10808, #fc1717); /* Обратный градиент */
+			transform: scale(1.05); /* Лёгкое увеличение */
+			box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Усиленная тень */
+		}
+		
+		/* Эффект при нажатии */
+		.regg2:active {
+			transform: scale(0.95); /* Уменьшение кнопки */
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшенная тень */
+		}
+		.user {
+			margin-right: 5px;
+			margin-bottom: -10px;
+			border-radius: 50px;
+		}
+		.user2 {
+			font-size: 45px;
+			margin-right: 10px;
+		}
+		.edit {
+			font-size: 45px;
+		}
+		.set {
+			background-color: transparent;
+			margin-right: 5px;
+			border: none;
+			outline: none;
+		}
+		.regt {
+			font-size: 20px;
+			font-weight: normal;
+		}
+		.regt2 {
+			font-size: 35px;
+		}
+		.regt3 {
+			font-size: 30px;
+		}
+		.red09 {
+			color: #cc4331;
+		}
+		.emer {
+			background: linear-gradient(90deg, #de433f, #621d0f); /* Градиент фона */
+			color: white; /* Цвет текста */
+			border: none; /* Убираем границу */
+			padding: 10px 20px; /* Внутренние отступы */
+			font-size: 16px; /* Размер текста */
+			font-weight: bold; /* Жирный текст */
+			border-radius: 8px; /* Закруглённые края */
+			cursor: pointer; /* Указываем курсор */
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
+			transition: all 0.3s ease; /* Плавный переход эффектов */
+		}
+		
+		/* Эффект при наведении */
+		.emer:hover {
+			background: linear-gradient(90deg, #621d0f, #de433f); /* Обратный градиент */
+			transform: scale(1.05); /* Лёгкое увеличение */
+			box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Усиленная тень */
+		}
+		
+		/* Эффект при нажатии */
+		.emer:active {
+			transform: scale(0.95); /* Уменьшение кнопки */
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшенная тень */
+		}
+		.emer2 {
+			background: linear-gradient(90deg, #bdbdbd, #5f5959); /* Градиент фона */
+			color: white; /* Цвет текста */
+			border: none; /* Убираем границу */
+			padding: 10px 20px; /* Внутренние отступы */
+			font-size: 16px; /* Размер текста */
+			font-weight: bold; /* Жирный текст */
+			border-radius: 8px; /* Закруглённые края */
+			cursor: pointer; /* Указываем курсор */
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
+			transition: all 0.3s ease; /* Плавный переход эффектов */
+		}
+		
+		/* Эффект при наведении */
+		.emer2:hover {
+			background: linear-gradient(90deg, #5f5959, #bdbdbd); /* Обратный градиент */
+			transform: scale(1.05); /* Лёгкое увеличение */
+			box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Усиленная тень */
+		}
+		
+		/* Эффект при нажатии */
+		.emer2:active {
+			transform: scale(0.95); /* Уменьшение кнопки */
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшенная тень */
+		}
+		.etext {
+			font-size: 16px;
+			color: #fff;
+		}
+		.kor {
+			margin-right: 20px;
+			margin-bottom: -10px;
+
+		}
+		.cart-container {
+			padding: 20px;
+			background-color: #2a2a2a; /* Черный фон */
+			border-radius: 10px;
+			margin: 20px auto;
+			width: 50%;
+		}
+		
+		.cart-items {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.cart-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+			border-bottom: 1px solid #444;
+		}
+		
+		.cart-item p {
+			margin: 0;
+		}
+		@media(max-width: 768px) {
+  .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .image-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .text-conainer, .text-conainer2 {
+    width: 100%;
+    text-align: center;
+  }
+  /* Меню скрываем за гамбургер */
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links a {
+    margin: 10px 0;
+  }
+  /* Размер шрифтов уменьшаем */
+  .red, .red2, .red3, .text3, .text4, .text5 {
+    font-size: smaller;
+  }
+}

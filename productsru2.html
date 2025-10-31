@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>IIF</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<meta charset="utf-8">
+</head>
+<body> 
+<header class="t">
+  <div class="left-content">
+    <img src="images/logo1.png" width="80px" height="75px" class="logo">
+    <p class="iif"><b>IIF CORP</b></p>
+    </div>
+  <nav class="nav-links">
+   
+      <a class="a" href="index.html" id="index">Главная страница</a>
+      <a class="a" href="productsru.php" id="products">Товары</a>
+      <a class="a" href="mainru.html" id="main">Главный офис</a>
+      <a class="a" href="ownru.html" id="own">Про основателя Корпорации</a>
+      <a class="a" href="academyru.html" style="margin-right: 20px;">IIF ACADEMY</a>
+  </nav>
+</header>
+<section class="red-section">
+</section>
+<section class="black-section">
+<div class="fed2">
+  <div class="form-container">
+    <h2 class="col">Оформление заказа</h2>
+    <form action="processru2.php" method="POST">
+      <label for="name">Фамилия и Имя:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Ваш Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Номер телефона:</label>
+      <input type="tel" id="phone_number" name="phone_number" required>
+
+      <label for="contry">Страна:</label>
+      <select id="contry" name="contry" required>
+        <option value="UA">Украина</option>
+        <option value="RU">Россия</option>
+        <option value="KZ">Казахстан</option>
+      </select>
+
+      <label for="city">Выберети город установки:</label>
+      <select id="city" name="city" required>
+        <option value="Lviv">Львов</option>
+        <option value="Kyiv">Киев</option>
+        <option value="Dnepr">Днепр</option>
+        <option value="kharkov">Харьков</option>
+        <option value="Astana">Астана</option>
+        <option value="Almaty">Алматы</option>
+        <option value="Karaganda">Караганда</option>
+        <option value="shymkent">Шымкент</option>
+        <option value="Aktau">Актау</option>
+        <option value="Saran">Сарань</option>
+        <option value="Astrakhan">Астрахань</option>
+        <option value="Moscow ">Москва</option>
+        <option value="Saint Petersburg">Санкт-Петербург</option>
+        <option value="Rostov on Don">Ростов на Дону</option>
+        <option value="Ufa">Уфа</option>
+        <option value="Omsk">Омск</option>
+      </select>
+      <input type="submit" value="Отправить заявку">
+    </form>
+  </div>
+  </div>
+  <footer>
+    <p class="last">Ⓒ IIF CORP</p>
+    </footer>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
